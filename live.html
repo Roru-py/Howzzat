@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howzatt-Live</title>
+    <script src="/Setup_Page/score.js" defer></script>
+    <script src="score.js" defer></script>
+    <link rel="stylesheet" href="live.css">
+</head>
+<body>
+    <form id="initial">
+        <label for="striker">Striker:</label>
+        <input type="text" id="striker"><br>
+        <label for="nonstriker">Non-Striker:</label>
+        <input type="text" id="nonstriker"><br>
+        <label for="bowler">Bowler:</label>
+        <input type="text" id="bowler"><br>
+        <button type="submit" id = "change">Start</button>
+    </form>
+    <p id="score"></p>
+    <div id="all">
+    <table id="bat_table">
+        <tr>
+            <th>Name</th>
+            <th>Runs</th>
+            <th>Balls</th>
+            <th>4s</th>
+            <th>6s</th>
+            <th>StrikeRate</th>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+    </table>
+    <table id="bowl_table">
+        <tr>
+            <th>Name</th>
+            <th>Overs</th>
+            <th>Maidens</th>
+            <th>Runs</th>
+            <th>Wickets</th>
+            <th>EconomyRate</th>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+    </table>
+    <button onclick="run(this)" value="0" class="run">0 run</button>
+    <button onclick="run(this)" value="1" class="run">1 run</button>
+    <button onclick="run(this)" value="2" class="run">2 run</button>
+    <button onclick="run(this)" value="3" class="run">3 run</button>
+    <button onclick="run(this)" value="4" class="run">4 run</button>
+    <button onclick="run(this)" value="5" class="run">5 run</button>
+    <button onclick="run(this)" value="6" class="run">6 run</button><br>
+    <button onclick="run(this)" value="wide">Wide</button><br>
+    Next Bowler Name:
+    <input id="nxtb" type="text"><br><br>
+    Next Batsman Name:
+    <input id="nxt" type="text"><br>
+    <button onclick="out()">WICKET</button><br><br>
+    <a href="/Scorecard_Page/scorecard.html">SCORECARD</a><br>
+    <button onclick="scorecard(this)">SHOW SCORECARD</button>
+    </div>
+    
+    <p id="bla"></p>
+</body>
+</html>
